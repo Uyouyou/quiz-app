@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #004643;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  color: #004643;
+}
+
+.circle h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+p {
+  color: #f8c660;
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32.04px;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: -12px;
+}
+
+.name {
+  margin-top: 120px;
+  width: 100%;
+  padding: 0 23px;
+}
+
+form {
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #eeeff2;
+}
+
+.name input[type="text"] {
+  height: 53px;
+  width: 100%;
+  border: 1px solid #eeeff2;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #fff;
+  padding: 4px 10px;
+  box-sizing: border-box;
+}
+
+.name input[type="text"]::placeholder {
+  color: #eeeff2;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  height: 59px;
+  border-radius: 20px;
+  margin-top: 200px;
+  background-color: #f8c660;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Baloo 2", cursive;
+}
