@@ -118,6 +118,10 @@ main {
   margin-right: 24px;
 }
 
+section {
+  margin-top: 70px;
+}
+
 .options {
   width: 383px;
   display: flex;
