@@ -5,52 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/quiz.css">
-    <title>quize</title>
+    <title>Quiz</title>
 </head>
 
 <body>
-    <main>
-        <section class="container">
-            <p class="direction"> <a href="/app/home.html"><span class="arrow">
-                &lt; </span> previous</p> </a>
-            <span class="number">7/10</span>
+    <div class="container">
+        <span class="head">
+            <a href="home.html">
+                <p class="nav"> &lt; <span class="pre">previous</span>
+                </p>
+            </a>
+            <p class="number">7/10</p>
+        </span>
 
-            <div class="outer_box">
-                <div class="inner_box">
-                    30
-                </div>
-            </div>
+        <span class="outer_box">
+            <p class="inner_box">
+                30
+            </p>
+        </span>
 
-            <div class="questions">
-                <p class="auto-questions">In what year did the United States <br>
-                    host the FIFA World Cup for the first time?</p>
-            </div>
+        <div class="questions">
+            <p class="auto-questions">In what year did the United States <br>
+                host the FIFA World Cup for the first time?</p>
+        </div>
 
-        </section>
         <section>
-            <div class="options">
+            <span class="options">
                 <p class="answers">1986</p>
                 <input class="radio" type="radio" />
-            </div>
-            <div class="options">
+            </span>
+            <span class="options">
                 <p class="answers">1994</p>
                 <input class="radio" type="radio" />
-            </div>
-            <div class="options">
+            </span>
+            <span class="options">
                 <p class="answers">2002</p>
                 <input class="radio" type="radio" />
-            </div>
-            <div class="options">
+            </span>
+            <span class="options">
                 <p class="answers">2010</p>
                 <input class="radio" type="radio" />
-            </div>
-
-            <button class="submit-btn">Next</button>
-
+            </span>
+            <button>Next</button>
         </section>
-
-    </main>
-
+    </div>
 </body>
 
 </html>

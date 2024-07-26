@@ -15,11 +15,21 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #eff0f3;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 430px;
+  align-items: center;
 }
 
 main {
-  background-color: #cdd4eb;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -28,64 +38,39 @@ main {
   padding-top: 2rem;
 }
 
-.submit-btn {
-  padding: 1rem 13.2rem 1rem 13.3rem;
-  border-radius: 1rem;
-  font-size: 20px;
-  color: #fff;
-  background-color: rgb(5, 77, 47);
-  cursor: pointer;
-}
-
-.direction {
-  position: absolute;
+.head {
   display: flex;
-  margin-left: 3rem;
-  justify-content: left;
-  text-align: left;
-  margin-top: 1.5rem;
-  font-size: 20px;
-  cursor: pointer;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 47px;
 }
 
-.arrow {
-  position: absolute;
-  display: flex;
-  font-size: 25px;
-  color: #fff;
-  margin-left: -2rem;
-  cursor: pointer;
+.nav {
+  font-size: 12px;
+  color: #004643;
+  font-weight: bold;
 }
-a {
-  color: #fff;
-  text-decoration: none;
+.pre {
+  margin-left: 4px;
 }
-
 .number {
-  position: absolut;
-  color: #000;
-  font-size: 20px;
-  display: flex;
-  margin-top: 1rem;
-  margin-bottom: rem;
-  text-align: center;
-  justify-content: center;
+  margin-left: 105px;
+  font-size: 18px;
 }
 
 .outer_box {
   position: absolute;
-  background: #fff;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 86px;
+  height: 86px;
   background: conic-gradient(
     rgb(3, 85, 14) 0turn var(--degrees),
     #78c478 0turn
   );
   animation: animate 3s cubic-bezier(1, 0, 0.5, 1) forwards;
-  margin: 3rem 15rem 3rem 13rem;
   border-radius: 100%;
   box-shadow: 1px 5px 10px 0px #999;
+  margin-top: 31px;
+  margin-left: 160px;
 }
 
 @keyframes animate {
@@ -96,8 +81,8 @@ a {
 
 .inner_box {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 66px;
+  height: 66px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -115,13 +100,10 @@ a {
   background: #fff;
   width: 383px;
   height: 229px;
-  top: 137px;
-  left: 23px;
   gap: 0px;
-  border-radius: 2rem;
-  margin-left: 5rem;
-  margin-top: 7rem;
-  opacity: 0px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 88px;
   box-shadow: 0rem 1rem 1rem 0rem #999;
 }
 
@@ -130,31 +112,30 @@ a {
   font-size: 18px;
   font-weight: 600;
   line-height: 2rem;
-  justify-content: center;
-  text-align: center;
+  text-align: left;
   margin-top: 5rem;
-  margin-left: 1rem;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .options {
+  width: 383px;
   display: flex;
   background-color: #fff;
-  margin: 2rem;
   padding: 1rem 0 1rem 0;
   border-radius: 4rem;
   cursor: pointer;
+  margin: 2rem;
 }
 
 .options:hover {
   background: #78c478;
-  transition: 1s ease-in-out;
 }
 
 input[type="radio"] {
   width: 20px;
   height: 20px;
-  margin-left: 22rem;
-  box-shadow: 1px #999;
+  margin-left: 254px;
   cursor: pointer;
 }
 
@@ -163,4 +144,15 @@ input[type="radio"] {
   color: #000;
   font-size: 20px;
   margin-left: 1rem;
+}
+
+button {
+  width: 383px;
+  height: 59px;
+  border-radius: 20px;
+  background-color: #004643;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Baloo 2", cursive;
+  margin: 2rem;
 }
