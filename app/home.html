@@ -4,32 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Brain-Puzzle</title>
 </head>
 <body>
     <div class="home">
-        <div class="circle">
+        <span class="circle">
             <h2>QUIZ</h2>
-            <span>Khelo</span>        
-        </div>
-        <div class="name">
+            <p>Khelo</p>        
+        </span>
+
+        <form class="name">
             <label for="text">Enter your name</label>
-            <input type="text"  id="text">
-        </div>
-
-        <div class="btn-div">
-            <button class="btn-submit">Continue without Authentication</button>
-            <span class="line"></span>
-            <button class="auth-btn">
-                <i class="fa-brands fa-google"></i>
-                Continue with Authentication
-            </button>
-        </div>
-       
-
-
+            <input type="text"  id="text" placeholder="John Doe...">
+            <button type="submit">Start</button>
+        </form>
     </div>
     
 </body>
