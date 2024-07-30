@@ -49,6 +49,7 @@ main {
   font-size: 12px;
   color: #004643;
   font-weight: bold;
+  cursor: pointer;
 }
 .pre {
   margin-left: 4px;
@@ -112,7 +113,7 @@ main {
   font-size: 18px;
   font-weight: 600;
   line-height: 2rem;
-  text-align: left;
+  text-align: center;
   margin-top: 5rem;
   margin-left: 24px;
   margin-right: 24px;
@@ -126,7 +127,9 @@ section {
   width: 383px;
   display: flex;
   background-color: #fff;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 4rem;
   cursor: pointer;
   margin: 2rem;
@@ -139,16 +142,11 @@ section {
 input[type="radio"] {
   width: 20px;
   height: 20px;
-  margin-left: 254px;
+  /* margin-left: 254px; */
   cursor: pointer;
 }
 
-.answers {
-  display: flex;
-  color: #000;
-  font-size: 20px;
-  margin-left: 1rem;
-}
+
 
 button {
   width: 383px;
@@ -159,4 +157,21 @@ button {
   font-size: 24px;
   font-family: "Baloo 2", cursive;
   margin: 2rem;
+  cursor: pointer;
+}
+/*  */
+.options.selected {
+  background-color: lightblue;
+}
+
+.result-container {
+  margin-bottom: 20px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
 }
