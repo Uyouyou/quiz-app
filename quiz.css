@@ -41,6 +41,7 @@ main {
 .head {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 20px;
   margin-left: 47px;
 }
@@ -121,6 +122,19 @@ main {
 
 section {
   margin-top: 70px;
+}
+
+.score{
+  text-align: center;
+
+  a{
+    text-decoration: none;
+    color: #004643;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
 }
 
 .options {
