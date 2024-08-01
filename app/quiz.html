@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/quiz.css">
     <title>Quiz</title>
 </head>
-
-<body>
+<body>    
     <div class="container">
         <span class="head">
-            <p class="nav">&lt; <span class="pre">previous</span></p>
-            <p class="number">1/30</p>
+            <p class="nav">&lt; <span class="pre">previous</span></p>            
+            <p class="number"></p>            
         </span>
-
         <span class="outer_box">
-            <p class="inner_box">30</p>
+            <p class="inner_box"></p>
         </span>
 
         <div class="questions">
             <p class="auto-questions"></p>
         </div>
-
         <section></section>
-        
         <button id="nextButton">Next</button>
-        <button id="submitButton" style="display:none;">Submit</button>
     </div>
+    <div class="result-container">
+        <h1>Quiz Result</h1>
+        <div>Your Score is: <span class="score"></span>/30</div>
+        <div class="message">Well done!</div>            
+        <a href="quiz.html" class="retry-button">Try Again</a>
+      </div>
     <script src="/main.js"></script>
 </body>
-
 </html>
