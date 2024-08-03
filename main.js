@@ -19,8 +19,7 @@ function displayQuestions(questions) {
     const progressContainer = document.querySelector('.number');
     const nextButton = document.querySelector('button');
     const prevButton = document.querySelector('.nav');    
-    const resultScore = document.querySelector('.score')
-
+    const resultScore = document.querySelector('.quiz-score')    
 
     let currentQuestionIndex = 1;    
     let timer;
@@ -62,7 +61,7 @@ function displayQuestions(questions) {
     }
 
     function startTimer() {
-        let timeLeft = 120;
+        let timeLeft = 200;
         document.querySelector('.inner_box').textContent = `${timeLeft}s`;
         timer = setInterval(() => {
             timeLeft--;
@@ -71,7 +70,7 @@ function displayQuestions(questions) {
                 clearInterval(timer);
                 container.style.display = 'none'
                 resultContainer.style.display = 'block'
-                resultScore.textContent = correctAnswers
+                resultScore.innerHTML = correctAnswers
             }
             if(timeLeft <= 60){
                 document.querySelector('.outer_box').style.background = `conic-gradient(rgb(156, 1, 1) 0turn var(--degrees),#e91212 0turn`
@@ -108,7 +107,7 @@ startTimer()
     }
 
 function displayResults() {            
-            resultScore.textContent = correctAnswers
+            resultScore.innerHTML = correctAnswers
             container.style.display = 'none'
             resultContainer.style.display = 'block'
 }    

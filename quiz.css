@@ -134,6 +134,10 @@ main {
 section {
   margin-top: 70px;
 }
+.links{
+  display: flex;
+  gap: 20px;
+}
 
 .score{
   text-align: center;
