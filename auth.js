@@ -5,8 +5,8 @@ const _supabaseKey =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF4b2NucHRxcmhoZ2VpYmhlaXZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIyODYwMDMsImV4cCI6MjAzNzg2MjAwM30.mIPMw7owB-Cclc-KGoMBN7dXZxbSVsoY-D1qtP9Kzqo";
 const _supabase = supabase.createClient(_supabaseUrl, _supabaseKey);
 
-// console.log(localStorage.getItem("data"));
-// console.log(localStorage.getItem("user"));
+console.log(localStorage.getItem("data"));
+console.log(localStorage.getItem("user"));
 document.addEventListener("DOMContentLoaded", function () {
   async function signInWithGithub() {
     try {
