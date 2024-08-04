@@ -9,7 +9,8 @@
 <body>    
     <div class="container">
         <span class="head">
-            <p class="nav">&lt; <span class="pre">previous</span></p>            
+            <p class="nav">&lt; <span class="pre">previous</span></p>    
+            <span id="logout-btn">logout</span>    
             <p class="number"></p>            
         </span>
         <span class="outer_box">
@@ -24,13 +25,6 @@
 
       <button id="nextButton">Next</button>
       <button id="submitButton" style="display: none">Submit</button>
-
-      <!-- <p class="score">
-        You scored 15/20 (75%)
-        <span><a href="/app/leaderboard.html">view leaderboard</a></span>
-      <button class="score">
-        Retake the quiz
-      </button> -->
     </div>
         <section></section>
     </div>
@@ -44,5 +38,7 @@
         </div>        
       </div>
     <script src="/main.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="./quiz.js" type="text/javascript"></script>
 </body>
 </html>
